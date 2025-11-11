@@ -583,7 +583,71 @@
 </head>
 <body>
 
+</head>
+<body>
 
+<script>
+  // 页面加载完毕立即弹出广告
+  (function() {
+    // 创建弹出广告容器
+    var adDiv = document.createElement('div');
+    adDiv.id = 'popupAd';
+    adDiv.style.position = 'fixed';
+    adDiv.style.top = '50%';
+    adDiv.style.left = '50%';
+    adDiv.style.transform = 'translate(-50%, -50%)';
+    adDiv.style.width = '350px';
+    adDiv.style.padding = '10px';
+    adDiv.style.backgroundColor = '#fff';
+    adDiv.style.border = '1px solid #ccc';
+    adDiv.style.boxShadow = '0 0 10px rgba(0,0,0,0.5)';
+    adDiv.style.zIndex = '9999';
+    adDiv.style.display = 'flex';
+    adDiv.style.flexDirection = 'column';
+    adDiv.style.alignItems = 'center';
+
+    // 创建广告图片，包裹在a标签中，点击跳转
+    var link = document.createElement('a');
+    link.href = 'https://babacaoxiaoh.github.io/yiqicao.cc/'; // 替换成你的广告网址
+    link.target = '_blank';
+
+    var img = document.createElement('img');
+    img.src = 'https://raw.githubusercontent.com/xingxing890/baidu.com/refs/heads/main/images/_.._logo_font20251106_uugai.com-6406588-17624390445241.png'; // 替换成你的广告图片地址
+    img.style.width = '100%';
+    img.style.cursor = 'pointer';
+
+    // 将图片放入链接中
+    link.appendChild(img);
+
+    // 关闭按钮
+    var closeBtn = document.createElement('button');
+    closeBtn.innerText = '关闭';
+    closeBtn.style.marginTop = '10px';
+    closeBtn.style.padding = '6px 12px';
+    closeBtn.style.backgroundColor = '#f00';
+    closeBtn.style.color = '#fff';
+    closeBtn.style.border = 'none';
+    closeBtn.style.borderRadius = '4px';
+    closeBtn.style.cursor = 'pointer';
+
+    closeBtn.onclick = function() {
+      document.body.removeChild(adDiv);
+    };
+
+    // 组装广告
+    adDiv.appendChild(link);        // 点击图片可跳转
+    adDiv.appendChild(closeBtn);    // 关闭按钮
+
+    // 添加到页面
+    document.body.appendChild(adDiv);
+  })();
+</script>
+
+</body>
+</html>
+
+
+	
 <style>
 .app {
 	margin:10px 0;
@@ -695,10 +759,6 @@
 <li><a rel="external nofollow" href="https://3wve1izv.gphdz.cn/?channelCode=XS067"  target="_blank"><img src="https://10700.赛格gps.公司/d/10700?_t=1755598434">
 <span style="color: #;">杏色直播</span></a></li>
 
-
-
-<li><a rel="external nofollow" href="https://138.113.51.191/?cid=4326274"  target="_blank"><img src="https://scrm-community.oss-cn-shenzhen.aliyuncs.com/miniso-vendor/20250605-455354-dbf0ea923a0c4a0ea49d11c1bfdcab3a.gif">
-<span style="color: #;">太阳城</span></a></li>
 
 
 
